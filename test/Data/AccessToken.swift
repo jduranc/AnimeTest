@@ -1,0 +1,65 @@
+//
+//  AccessToken.swift
+//  test
+//
+//  Created by Luis Duran on 8/11/17.
+//  Copyright © 2017 valuout. All rights reserved.
+//
+
+import UIKit
+import RealmSwift
+import ObjectMapper
+
+
+class AccessToken: Object, Mappable {
+
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Members
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	
+	struct Fields {
+		static let Id			= "id"
+		static let Token		= "access_token"
+		static let TokenType	= "token_type"
+	}
+	
+	static let UniqueID			= 1
+	
+	dynamic var id			: Int		= UniqueID		//use only 1 record for access token
+	dynamic var token		: String?
+	dynamic var type		: String?
+	
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	// Mappeable object.
+	// init with map.
+	required convenience init?(map: Map) {
+		self.init()
+	}
+	
+	
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Realm Properties
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	override static func primaryKey() -> String? {
+		return Fields.Id
+	}
+	
+	
+	override static func indexedProperties() -> [String] {
+		return [Fields.Id]
+	}
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Mappable
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	func mapping(map: Map)
+	{
+		token		<- map[Fields.Token]
+		type		<- map[Fields.TokenType]
+		
+		// customize/modify some value?.
+	}
+}

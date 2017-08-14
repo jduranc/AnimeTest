@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+        <array key="Calibri.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageWaitView" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nx9-Zd-fca">
+                    <rect key="frame" x="28" y="28" width="552" height="47"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MKC-Mf-yZN">
+                            <rect key="frame" x="0.0" y="2" width="552" height="43.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="[Title]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-4T-ytS">
+                                    <rect key="frame" x="0.0" y="0.0" width="552" height="21"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="18"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Message Body]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFP-4Z-N2a">
+                                    <rect key="frame" x="0.0" y="26" width="552" height="17.5"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-1A-0Fa" customClass="LOTView" customModule="test" customModuleProvider="target">
+                    <rect key="frame" x="493" y="8" width="87" height="87"/>
+                    <color key="backgroundColor" red="0.015686274510000001" green="0.6588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="G2L-1A-0Fa" secondAttribute="height" multiplier="1:1" id="WKR-iu-V8c"/>
+                        <constraint firstAttribute="height" constant="87" id="e51-UY-Tqa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Nx9-Zd-fca" secondAttribute="trailing" constant="20" id="4sW-g4-sKy"/>
+                <constraint firstAttribute="bottom" secondItem="G2L-1A-0Fa" secondAttribute="bottom" constant="8" id="GCs-m7-vFW"/>
+                <constraint firstAttribute="trailing" secondItem="G2L-1A-0Fa" secondAttribute="trailing" constant="20" id="GUp-BI-0DH"/>
+                <constraint firstAttribute="bottomMargin" secondItem="Nx9-Zd-fca" secondAttribute="bottom" constant="20" id="SPZ-ev-Lj3"/>
+                <constraint firstItem="Nx9-Zd-fca" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="20" id="UDP-8w-ZKv"/>
+                <constraint firstItem="G2L-1A-0Fa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Z6b-a7-gva"/>
+                <constraint firstItem="Nx9-Zd-fca" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="20" id="jKx-hQ-JzW"/>
+                <constraint firstItem="G2L-1A-0Fa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="m8a-Qb-1iY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="bounceAnimationOffset">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="statusBarOffset">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bodyLabel" destination="dFP-4Z-N2a" id="xf2-M7-BfM"/>
+                <outlet property="titleLabel" destination="8T6-4T-ytS" id="ZfL-Z3-Gk0"/>
+                <outlet property="vwAnimation" destination="G2L-1A-0Fa" id="Br6-YT-qUr"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="352.5"/>
+        </view>
+    </objects>
+</document>

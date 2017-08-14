@@ -1,0 +1,65 @@
+//
+//  SideMenuSearchViewController.swift
+//  test
+//
+//  Created by Luis Duran on 8/13/17.
+//  Copyright © 2017 valuout. All rights reserved.
+//
+
+import UIKit
+
+
+
+
+
+protocol SearchDelegate: class
+{
+	func onSearch(query: String)
+}
+
+
+
+class SideMenuSearchViewController: UIViewController {
+
+	
+	
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Outlets
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	
+	@IBOutlet weak var txSearch: UITextField!
+	@IBOutlet weak var btSearch: UIButton!
+	
+	
+	public weak var delegate : SearchDelegate?
+	
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Members
+	/////////////////////////////////////////////////////////////////////////////////////////////
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+		self.btSearch.roundCorner()
+    }
+
+
+	
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Events
+	/////////////////////////////////////////////////////////////////////////////////////////////
+
+	@IBAction func onClickSearch(_ sender: Any)
+	{
+		if	let query		= self.txSearch.text,
+			let delegate	= self.delegate
+		{
+//			print("Search: \(query)")
+			delegate.onSearch(query: query)
+		}
+	}
+	
+
+
+}
