@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJc-71-JOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1954" y="-229"/>
+            <point key="canvasLocation" x="-2621" y="-228"/>
         </scene>
         <!--Serie View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1463.2" y="-227.13643178410797"/>
+            <point key="canvasLocation" x="-1843" y="-229"/>
         </scene>
         <!--Serie Details View Controller-->
         <scene sceneID="fuW-X4-ZQI">
@@ -215,7 +215,7 @@
                                             <outlet property="vwCard" destination="Rvk-Eo-TNH" id="3R5-9R-elc"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HtmlText" rowHeight="250" id="JbZ-tQ-Pu7" customClass="HtmlTextTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HtmlText" rowHeight="250" id="JbZ-tQ-Pu7" customClass="HtmlTextTableViewCell" customModule="test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="179" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JbZ-tQ-Pu7" id="xy6-gI-RxH">
@@ -224,7 +224,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd0-2g-DOm">
                                                     <rect key="frame" x="8" y="16" width="304" height="226"/>
-                                                    <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue pellentesque porta. Sed ut est metus. Cras luctus turpis ultrices dictum convallis. Mauris malesuada lectus vel sollicitudin feugiat. Aenean rutrum vestibulum aliquam. Vivamus dignissim aliquet lacus, et tristique quam egestas vel. Proin in urna a odio porttitor egestas. Mauris vitae purus hendrerit, imperdiet elit et, ullamcorper massa. Cras et ante pellentesque, fermentum neque vel, dignissim nunc. Nullam pellentesque in ipsum ac placerat. Vestibulum et erat ante. Aliquam elementum, arcu quis sollicitudin scelerisque, lacus magna ornare dolor, id rutrum urna dui id libero. Curabitur in quam sem. Maecenas ligula ligula, sodales sed pretium vitae, ornare at ligula.</mutableString>
+                                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue pellentesque porta. Sed ut est metus. Cras luctus turpis ultrices dictum convallis. Mauris malesuada lectus vel sollicitudin feugiat. Aenean rutrum vestibulum aliquam. Vivamus dignissim aliquet lacus, et tristique quam egestas vel. Proin in urna a odio porttitor egestas. Mauris vitae purus hendrerit, imperdiet elit et, ullamcorper massa. Cras et ante pellentesque, fermentum neque vel, dignissim nunc. Nullam pellentesque in ipsum ac placerat. Vestibulum et erat ante. Aliquam elementum, arcu quis sollicitudin scelerisque, lacus magna ornare dolor, id rutrum urna dui id libero. Curabitur in quam sem. Maecenas ligula ligula, sodales sed pretium vitae, ornare at ligula.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -554,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruK-ao-gil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-520" y="-228"/>
+            <point key="canvasLocation" x="-150" y="-229"/>
         </scene>
         <!--Side Menu Season View Controller-->
         <scene sceneID="pya-KQ-Zyc">
@@ -610,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itH-uk-Hdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-104" y="-367"/>
+            <point key="canvasLocation" x="630" y="-449"/>
         </scene>
         <!--Side Menu Search View Controller-->
         <scene sceneID="pzN-ey-P4k">
@@ -664,7 +664,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMd-74-FBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-104" y="-3"/>
+            <point key="canvasLocation" x="630" y="147"/>
         </scene>
     </scenes>
     <resources>
