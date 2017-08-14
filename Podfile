@@ -11,6 +11,6 @@ pod 'AlamofireImage'
 pod 'ObjectMapper', '~> 2.2'
 pod 'SDWebImage'
 pod 'LGSideMenuController'
-pod 'lottie-ios'
+pod 'lottie-ios’, '~> 2.0'
 pod 'SwiftMessages'
 end
