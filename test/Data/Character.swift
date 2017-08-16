@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by Jose Luis Duran Cota on 8/11/17.
-//  Copyright © 2017 valuout. All rights reserved.
+//  Copyright © 2017 . All rights reserved.
 //
 
 import UIKit
@@ -26,6 +26,7 @@ class Character: Object, Mappable
 		static let Role			= "role"
 		
 		static let Image		= "image_url_lge"
+		static let Info			= "info"
 		
 	}
 	
@@ -37,7 +38,7 @@ class Character: Object, Mappable
 	dynamic var role		: String?
 	
 	dynamic var imageUrl	: String?
-	
+	dynamic var info		: String?
 	
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////
@@ -72,7 +73,14 @@ class Character: Object, Mappable
 		altName		<- map[Fields.AltName]
 		role		<- map[Fields.Role]
 		
+//		//check for some value present
+//		if let value : String? = try? map.value(Fields.Role)
+//		{
+//			role	= value
+//		}
+				
 		imageUrl	<- map[Fields.Image]
+		info		<- map[Fields.Info]
 		
 		// customize/modify some value?.
 	}

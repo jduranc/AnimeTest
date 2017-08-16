@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by Luis Duran on 8/12/17.
-//  Copyright © 2017 valuout. All rights reserved.
+//  Copyright © 2017 . All rights reserved.
 //
 
 import UIKit
@@ -44,7 +44,7 @@ class SerieDetailsViewController: UIViewController,
 	var model		: SerieModel!
 	
 	var server		= Server()
-	
+	var dialog		= Dialog()
 	
 	
 
@@ -69,15 +69,24 @@ class SerieDetailsViewController: UIViewController,
 
 	
 	
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	// MARK: - Navigation
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// Get the new view controller using segue.destinationViewController.
+		// Pass the selected object to the new view controller.
+		
+//		if(segue.identifier == "character")
+//		{
+			if	let dst		= segue.destination as? CharacterViewController,
+				let cell	= sender as? CharacterCollectionViewCell,
+				let data	= cell.character
+			{
+				dst.character	= data
+			}
+//		}
+	}
 	
 	
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -91,7 +100,7 @@ class SerieDetailsViewController: UIViewController,
 			self.server.getAnime(serieId: self.model.serie.id, authorization: auth, handler: { (serie, error) in
 				if (error != nil)
 				{
-					
+					self.dialog.error(title: "Upps!!!", message: "Something was wrong, please try again later", autohide: true)
 				}
 				else
 				{

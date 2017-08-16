@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by Jose Luis Duran Cota on 8/11/17.
-//  Copyright © 2017 valuout. All rights reserved.
+//  Copyright © 2017 . All rights reserved.
 //
 
 import UIKit
@@ -27,11 +27,13 @@ class Server: NSObject
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	struct Endpoint
 	{
-		static let Login		= "auth/access_token"
-		static let Browse		= "browse/anime"
-		static let Search		= "anime/search/"
-		static let Anime		= "anime/{serie_id}"
-		static let Character	= "anime/{serie_id}/characters"
+		static let Login			= "auth/access_token"
+		static let Browse			= "browse/anime"
+		static let Search			= "anime/search/"
+		static let Anime			= "anime/{serie_id}"
+		static let SerieCharacters	= "anime/{serie_id}/characters"
+		static let Character		= "character/"
+		
 	}
 	
 	
