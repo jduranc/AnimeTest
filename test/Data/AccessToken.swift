@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by Luis Duran on 8/11/17.
-//  Copyright © 2017 valuout. All rights reserved.
+//  Copyright © 2017 . All rights reserved.
 //
 
 import UIKit

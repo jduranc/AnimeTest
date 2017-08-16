@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by Luis Duran on 8/13/17.
-//  Copyright © 2017 valuout. All rights reserved.
+//  Copyright © 2017 . All rights reserved.
 //
 
 import UIKit
@@ -45,7 +45,7 @@ class LOTView: UIView {
 	// Load animation file and attach to current view
 	func load(file: String)
 	{
-		let animationView	= LOTAnimationView(name: file)
+		let animationView 	= LOTAnimationView(name: file)
 		self.animation		= animationView
 		
 		animationView.translatesAutoresizingMaskIntoConstraints = false
